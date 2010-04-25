@@ -1,0 +1,7 @@
+AntikvariatJudaicaCZ.pm
+Makefile.PL
+MANIFEST			This list of files
+t/WWW::Search::AntikvariatJudaicaCZ/00_use.t
+t/WWW::Search::AntikvariatJudaicaCZ/01_version.t
+t/WWW::Search::AntikvariatJudaicaCZ/02_pod_coverage.t
+t/WWW::Search::AntikvariatJudaicaCZ/03_pod.t
