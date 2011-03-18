@@ -1,6 +1,4 @@
-#------------------------------------------------------------------------------
 package WWW::Search::AntikvariatJudaicaCZ;
-#------------------------------------------------------------------------------
 
 # Pragmas.
 use base qw(WWW::Search);
@@ -23,11 +21,8 @@ Readonly::Scalar my $ACTION1 => 'search/node/';
 # Version.
 our $VERSION = 0.01;
 
-#------------------------------------------------------------------------------
-sub native_setup_search {
-#------------------------------------------------------------------------------
 # Setup.
-
+sub native_setup_search {
 	my ($self, $query) = @_;
 	$self->{'_def'} = scraper {
 #		process '//meta[@http-equiv="Content-Type"]', 'encoding' => [
@@ -58,11 +53,8 @@ sub native_setup_search {
 	return 1;
 }
 
-#------------------------------------------------------------------------------
-sub native_retrieve_some {
-#------------------------------------------------------------------------------
 # Get data.
-
+sub native_retrieve_some {
 	my $self = shift;
 
 	# Get content.
