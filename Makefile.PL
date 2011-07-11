@@ -7,6 +7,7 @@ use ExtUtils::MakeMaker;
 
 # Definition.
 WriteMakefile(
+	'AUTHOR' => 'Michal Špaček <skim@cpan.org>',
 	'LICENSE' => 'bsd',
 	'NAME' => 'WWW::Search::AntikvariatJudaicaCZ',
 	'PREREQ_PM' => {
