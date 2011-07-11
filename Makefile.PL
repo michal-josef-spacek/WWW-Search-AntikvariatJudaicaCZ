@@ -3,6 +3,7 @@ use ExtUtils::MakeMaker;
 
 # Definition.
 WriteMakefile(
+	'LICENSE' => 'bsd',
 	'NAME' => 'WWW::Search::AntikvariatJudaicaCZ',
 	'PREREQ_PM' => {
 #		'Encode' => 0,
