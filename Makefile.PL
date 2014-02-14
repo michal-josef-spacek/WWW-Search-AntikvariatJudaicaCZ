@@ -10,6 +10,7 @@ abstract 'Class for searching http://www.antikvariat-judaica.cz/ .';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'WWW-Search-AntikvariatJudaicaCZ';
+readme_from 'AntikvariatJudaicaCZ.pm';
 requires 'File::Object' => 0.07;
 requires 'LWP::UserAgent' => 0;
 requires 'Readonly' => 0;
