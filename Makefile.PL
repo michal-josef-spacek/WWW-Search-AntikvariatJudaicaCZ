@@ -3,24 +3,30 @@ use strict;
 use warnings;
 
 # Modules.
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
 # Definition.
-WriteMakefile(
-	'AUTHOR' => 'Michal Špaček <skim@cpan.org>',
-	'LICENSE' => 'bsd',
-	'NAME' => 'WWW::Search::AntikvariatJudaicaCZ',
-	'PREREQ_PM' => {
-#		'Encode' => 0,
-		'File::Object' => 0,
-		'LWP::UserAgent' => 0,
-		'Readonly' => 0,
-#		'Text::Iconv' => 0,
-#		'Web::Scraper' => 0,
-		'WWW::Search' => 0,
-	},
-	'VERSION' => 0.01,
-	'test' => {
-		'TESTS' => 't/WWW::Search::AntikvariatJudaicaCZ/*.t',
-	},
-);
+abstract 'Class for searching http://www.antikvariat-judaica.cz/ .';
+author 'Michal Špaček <skim@cpan.org>';
+license 'bsd';
+name 'WWW-Search-AntikvariatJudaicaCZ';
+requires 'File::Object' => 0.07;
+requires 'LWP::UserAgent' => 0;
+requires 'Readonly' => 0;
+requires 'WWW::Search' => 0;
+resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
+	'?Name=WWW-Search-AntikvariatJudaicaCZ';
+resources 'homepage' => 'https://github.com/tupinek/'.
+	'WWW-Search-AntikvariatJudaicaCZ';
+resources 'repository' => 'git://github.com/tupinek/'.
+	'WWW-Search-AntikvariatJudaicaCZ';
+test_requires 'English' => 0;
+test_requires 'File::Object' => 0.01;
+test_requires 'Test::More' => 0;
+test_requires 'Test::Pod' => 0;
+test_requires 'Test::Pod::Coverage' => 0;
+tests_recursive;
+version '0.01';
+
+# Run.
+WriteAll();
