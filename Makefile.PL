@@ -11,9 +11,9 @@ author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'WWW-Search-AntikvariatJudaicaCZ';
 readme_from 'AntikvariatJudaicaCZ.pm';
-requires 'File::Object' => 0.07;
 requires 'LWP::UserAgent' => 0;
 requires 'Readonly' => 0;
+requires 'Web::Scraper' => 0;
 requires 'WWW::Search' => 0;
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=WWW-Search-AntikvariatJudaicaCZ';
