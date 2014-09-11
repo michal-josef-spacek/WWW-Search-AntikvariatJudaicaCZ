@@ -15,6 +15,7 @@ requires 'LWP::UserAgent' => 0;
 requires 'Readonly' => 0;
 requires 'Web::Scraper' => 0;
 requires 'WWW::Search' => 0;
+requires 'perl' => '5.8.0';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=WWW-Search-AntikvariatJudaicaCZ';
 resources 'homepage' => 'https://github.com/tupinek/'.
