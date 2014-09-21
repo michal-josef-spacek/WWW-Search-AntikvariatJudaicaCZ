@@ -9,7 +9,6 @@ use warnings;
 use LWP::UserAgent;
 use Readonly;
 use Web::Scraper;
-use WWW::Search qw(generic_option);
 
 # Constants.
 Readonly::Scalar our $MAINTAINER => 'Michal Spacek <skim@cpan.org>';
@@ -20,7 +19,7 @@ Readonly::Scalar my $ACTION1 => 'search/node/';
 our $VERSION = 0.02;
 
 # Setup.
-sub native_setup_search {
+sub _native_setup_search {
 	my ($self, $query) = @_;
 	$self->{'_def'} = scraper {
 		process '//div[@class="content"]/dl/div', 'books[]' => scraper {
@@ -44,7 +43,7 @@ sub native_setup_search {
 }
 
 # Get data.
-sub native_retrieve_some {
+sub _native_retrieve_some {
 	my $self = shift;
 
 	# Get content.
