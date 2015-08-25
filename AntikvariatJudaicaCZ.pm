@@ -16,7 +16,7 @@ Readonly::Scalar my $BASE_URL => 'http://antikvariat-judaica.cz/';
 Readonly::Scalar my $ACTION1 => 'search/node/';
 
 # Version.
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 # Setup.
 sub _native_setup_search {
@@ -182,6 +182,6 @@ BSD license.
 
 =head1 VERSION
 
-0.02
+0.03
 
 =cut
