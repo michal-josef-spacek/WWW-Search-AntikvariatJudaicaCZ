@@ -1,4 +1,4 @@
-0.02
+0.02 2015-08-25T23:08:34+02:00
  - Add minimal version of Perl.
  - Remove obsolete code.
  - Update Module::Install to 1.16 version.
