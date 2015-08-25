@@ -7,7 +7,7 @@ use inc::Module::Install;
 
 # Definition.
 abstract 'Class for searching http://www.antikvariat-judaica.cz/ .';
-author 'Michal Špaček <skim@cpan.org>';
+author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'WWW-Search-AntikvariatJudaicaCZ';
 readme_from 'AntikvariatJudaicaCZ.pm';
